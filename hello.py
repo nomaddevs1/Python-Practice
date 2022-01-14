@@ -126,3 +126,5 @@ print(cubes)
 
 
 #Working with part of list 
+
+#Slicing a list 
