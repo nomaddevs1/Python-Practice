@@ -12,8 +12,6 @@ print(full_name)
 #Stripping of whitespace
 print(" hello ".strip())
 
-
-
 #Excersise
 #Personal Message
 name = "adam"
@@ -128,3 +126,22 @@ print(cubes)
 #Working with part of list 
 
 #Slicing a list 
+print(cubes[0:4])
+
+players = ["charles", "martina", "micheal", "florence", "eli"]
+print(players[:3])
+print(players[-3:])
+
+#We can do for loop for a slice list just place in a fot loop
+for name in players[-3:]:
+    print(name.title())
+print("The list of players at the bottom of the table")
+
+#Copying list
+my_foods = ["pizza", "falafel", "carrot cake"]
+friend_food = my_foods[:]
+
+#Tuples- list that cannot be changed
+dimensions = (200, 50)
+print(dimensions[0])
+# dimensions[1] = 20 # will throw an error because tuples are not mearnt to be chamge
