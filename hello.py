@@ -145,3 +145,24 @@ friend_food = my_foods[:]
 dimensions = (200, 50)
 print(dimensions[0])
 # dimensions[1] = 20 # will throw an error because tuples are not mearnt to be chamge
+#if we want to define a  tuple with one value it must have a trailing comma
+my_t = (3,)
+
+#Looping in a tuple is the same as looping in a list
+for dimension in dimensions:
+    print(dimension)
+
+    #If statement
+    #checking for equality
+    car = "Bmw"
+    car == "bmw"
+
+
+
+#in keyword-> is used to check if an element is present in a lists
+name = "marie"
+banned_name = ["jake", "audrey", "melina"]
+if name in banned_name:
+        print("Name is banned you cannot access the content")
+else:
+        print("You can access the content")
