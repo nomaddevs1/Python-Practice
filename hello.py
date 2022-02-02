@@ -1,3 +1,6 @@
+from this import d
+
+
 message = "hello world."
 print(message.title())
 
@@ -166,3 +169,46 @@ if name in banned_name:
         print("Name is banned you cannot access the content")
 else:
         print("You can access the content")
+  
+#Dictionaries
+alien_0={"color":"green", "points": 5}
+print(alien_0["color"])
+print(alien_0.items())
+# We can add new key value pairs to the dictionary
+alien_0["x-position"] = 0;
+alien_0["y-position"] =25;
+# a dicitionary retain the order it is defined
+# a dicitionary key can be redefined by passing it another value
+alien_0["color"] = "yellow"
+print(alien_0.values())
+
+
+# we can delete a key value pair by using the del keyword in front of the acccesor
+del alien_0["points"]
+print(alien_0)
+
+#if a key doesn't exits in a dictionary we can use get method to specify what message we want back from the comp
+print(alien_0.get("points", "Point key doesn't exist"))
+
+# Looping through a dictionary
+print(alien_0.items())
+# we use the .items() method in a for loop to get both the key and value pair together
+for k, v in alien_0.items():
+    print(f"{k }:{ v}");
+#Looping through a dicitionary the default behaviour is looping through the keys in the dictionary
+for k in alien_0:
+    print(f"{k}")  #This will print out all the keys in the dictionary
+    # we can choose to use .keys() explicit if we want to make the code more readable
+
+favorite_languages = {
+    "jen" : "python",
+    "sarah":"c",
+    "edward":"ruby",
+    "farouq":"javascript",
+    "phil":"python"
+}
+
+
+for name in favorite_languages:
+    if 'erin' not in name:
+        print("Erin, please take our poll")
