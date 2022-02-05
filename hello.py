@@ -212,3 +212,41 @@ favorite_languages = {
 for name in favorite_languages:
     if 'erin' not in name:
         print("Erin, please take our poll")
+
+def twosums(arr, target):
+    left = 0;
+    right = len(arr)-1
+    while(left <=  right):
+        sum =arr[left]+arr[right];
+        if(sum == target):
+            return [arr[left], arr[right]]
+        if(sum >  target):
+            right= right-1
+        else:
+            left=left+1
+
+
+print(twosums([1,3,4,5,7,11], 10))
+ 
+import turtle
+import colorsys 
+t=turtle.Turtle()
+s=turtle.Screen()
+
+s.bgcolor('black')
+t.speed(0)
+n=80 
+h=0;
+
+for i in range(360):
+    c=colorsys.hls_to_rgb(h, 0.7, 0.8)
+    h+=1/n
+    t.color(c)
+    for j in range(2):
+        t.fillcolor('violet')
+        t.left(20)
+        t.color()
+        t.forward(i*2)
+    for v in range(3):
+        t.left(70)
+        t.forward(i*2)
